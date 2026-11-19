@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ОГЭ по физике · Лабораторная работа № 9</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1><em id="ttl"></em><span>Комплект № 6</span></h1>
+  <div class="acts"><button id="shot">Сохранить схему (PNG)</button><button id="reset">Начать заново</button></div>
+</header>
+<main>
+  <aside class="kit">
+    <h2>Лабораторная работа</h2>
+    <nav id="works"></nav>
+    <canvas id="tray" aria-label="Комплект оборудования № 6"></canvas>
+    <p class="hint" id="hint"></p>
+    <details>
+      <summary>Спецификация комплекта</summary>
+      <table>
+        <tr><td>Рычаг</td><td>40 см, крепления для грузов</td></tr>
+        <tr><td>Три груза</td><td>(100 ± 2) г каждый</td></tr>
+        <tr><td>Динамометр</td><td>до 5 Н, цена деления 0,1 Н</td></tr>
+        <tr><td>Линейка</td><td>300 мм, миллиметровые деления</td></tr>
+      </table>
+    </details>
+  </aside>
+  <section class="stage">
+    <canvas id="c"></canvas>
+    <div class="bar"><span class="chip">Динамометр <b id="dyn">—</b></span><span class="chip"><span id="l2">Рычаг</span> <b id="lv">—</b></span></div>
+  </section>
+  <aside class="ans">
+    <h2>Задание</h2><div id="task"></div>
+    <h2>Бланк ответов № 2</h2><div id="form"></div>
+    <button id="chk" class="main">Проверить</button>
+    <div id="res" aria-live="polite"></div>
+  </aside>
+</main>
+<script src="lab9.js"></script>
+</body>
+</html>
